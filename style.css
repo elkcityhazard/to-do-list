@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  background-color: #333;
+  display: block;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height:100%;
+  margin: 0 auto;
+  max-width: 968px;
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+}
+
+.row {
+  display: block;
+  margin: 40px auto;
+  min-width: 300px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.message-container {
+  position: relative;
+}
+
+.list-header {
+  box-shadow: 0 2px 10px 4px rgba(255, 255, 255, .25);
+  margin: 40px 10px;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+form label {
+  color: #fff;
+  margin: 0px 10px 0 5px;
+}
+
+form input {
+  background-color: #555;
+  color :#fff;
+  line-height: 2;
+  width: 200px;
+}
+
+
+form button {
+  margin: 20px auto 0;
+}
+
+.list {
+  display: block;
+  float: left;
+  margin: 20px 0;
+  min-height: 50vh;
+  min-width: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+.list ul {
+  background-color: #333;
+  color: #000;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.list li {
+  background: #222;
+  color: #fff;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: .5em 1em;
+}
+
+.finished-list-items {
+  min-height: 200px;
+}
+
+.drag-me {
+  border: 1px solid #fff;
+  box-shadow: 2px 5px 1px 2px rgba(0, 0 , 0, .25);
+}
+
+.hide {
+  display: none;
+}
+
+
+/********************
+**Typography
+*******************/
+
+span {
+  color: #fff;
+  display: inline-block;
+  font-family: monospace;
+  margin: 0;
+  padding: .5em .75em;
+  width: 50%;
+}
+
+.small {
+  border: 1px solid #444;
+  color: red;
+  display: none;
+  margin: 20px auto 0;
+  max-width: 200px;
+  position:absolute;
+  left: 50%;
+  top: 75px;
+  transform: translate(-50%, 0);
+  width: 50%;
+}
