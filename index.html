@@ -23,12 +23,12 @@
     </div>
     <div class="row clearflix">
       <div class="list-header"><span>New Tasks:</span><span>Finished Items:</span></div>
-<div class="list" id="new-task" ondrop="drop(event)" ondragover="allowDrop(event)">
+<div class="list" id="new-task" ondrop="putBack(event, this)" ondragover="allowDrop(event)">
   <ul id="list-items">
     <li class="drag-me hide"><!--Hidden List Item --></li>
       </ul>
     </div>
-<div class="list" ondrop="drop(event)" ondragover="allowDrop(event)">
+<div class="list" ondrop="drop(event, this)" ondragover="allowDrop(event)">
   <ul class="finished-list-items" id="finished-task" ></ul>
 </div>
     </div>

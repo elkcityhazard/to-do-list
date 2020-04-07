@@ -39,10 +39,18 @@ function drag(ev) {
   console.log(ev.target.id);
 }
 
-function drop(ev) {
+function drop(ev, el) {
   ev.preventDefault();
+  el = document.getElementById('finished-task');
   var data = ev.dataTransfer.getData('text');
-  ev.target.appendChild(document.getElementById(data));
+  el.appendChild(document.getElementById(data));
+}
+
+function putBack(ev, el) {
+  ev.preventDefault();
+  el = document.getElementById('new-task');
+  var data = ev.dataTransfer.getData('text');
+  el.appendChild(document.getElementById(data));
 }
 
 /****************
